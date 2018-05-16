@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Result</title>
+</head>
+<body>  
+    <h2>Thank you submitting this form! You have submitted the form 
+        {{request.session.time}} times now.
+    </h2>
+    <h3>Submitted Information:</h3>
+    <p>Name: {{last_survey.full_name}}</p>
+    <p>Location: {{last_survey.location}}</p>
+    <p>Favorite Language: {{last_survey.language}}</p>
+    <p>Comment: {{last_survey.comment}}</p>
+    <a href="/back"><button>Go Back</button></a>
+</body>
+</html>
